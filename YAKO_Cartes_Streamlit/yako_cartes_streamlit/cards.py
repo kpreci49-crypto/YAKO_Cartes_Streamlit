@@ -46,7 +46,7 @@ class Card:
     qr_png: bytes | None = None
     kind: str = "Employé"
     def __post_init__(self) -> None:
-    object.__setattr__(self, "role", self.role.strip().upper())
+        object.__setattr__(self, "role", self.role.strip().upper())
     qr_png: bytes | None = None
     kind: str = "Employé"
 
